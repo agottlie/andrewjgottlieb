@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/agottlie/andrewjgottlieb#readme",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "grunt-cli": "^1.2.0"
   }
 }
