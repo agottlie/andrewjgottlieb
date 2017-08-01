@@ -8,92 +8,99 @@
     <title>Andrew Gottlieb</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/animate.css">
-    <link href="https:/ /fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
     <link rel="stylesheet" href="./css/magic.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </head>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid bg-success">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li><a href="#languages">LANGUAGES</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-            <div class="social">
-                <div class="github">
-                    <a href="https://github.com/agottlie"><img src="./images/Github-Mark-64px.png"></a>
-                </div>
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/andrew-gottlieb/"><img src="./images/linkedin.png"></a>
-                </div>
-                <div class="twitter">
-                    <a href="https://twitter.com/agottlie"><img src="./images/twitter.png"></a>
-                </div>
-            </div>
         </div>
     </div>
 </nav>
 
 <body>
     <div class="section" id="intro">
-        <h1 class="text-center align-middle intro">Andrew Gottlieb</h1>
-        <h1 class="text-center align-middle animated rubberBand intro">Full Stack Web Developer</h2>
+        <h1 class="text-center align-middle">Andrew Gottlieb</h1>
+        <h3 class="text-center align-middle animated rubberBand">Full Stack Web Developer</h3>
     </div>
     <div class="section" id="about">
         <h1>ABOUT ME</h1>
-        <p class="aboutText">I’m a passionate web developer looking to combine my creativity and operations background in a collaborative environment. My experience in everything from the advertising world to playing in a band gives me the adaptability needed to work in a fast-paced workplace. I’m eager to learn, to lead, and to inspire.</p>
+        <p class="smallText">I’m a passionate web developer looking to combine my creativity and operations background in a collaborative environment. My experience in everything from the advertising world to playing in a band gives me the adaptability needed to work in a fast-paced workplace. I’m eager to learn, to lead, and to inspire.</p>
         <br />
-        <p class="aboutText">I graduated from the University of Pennsylvania with a Bachelor's degree in Sociology and a minor in Economics. Shortly after I moved to New York City, and have spent time in the startup world as well as the corporate world, working with everything from finance to augmented reality. When not in front of a computer, you'll probably find me behind my drum kit or biking around Brooklyn.</p>
+        <p class="smallText">I graduated from the University of Pennsylvania with a Bachelor's degree in Sociology and a minor in Economics. Shortly after I moved to New York City, and have spent time in the startup world as well as the corporate world, working with everything from finance to augmented reality. When not in front of a computer, you'll probably find me behind my drum kit or biking around Brooklyn.</p>
         <br />
-        <p class="aboutText">Above all else, I'm a problem solver. I love tinkering around with code to improve functionality, increase efficiency, and add cool features.</p>
+        <p class="smallText">Above all else, I'm a problem solver. I love tinkering around with code to improve functionality, increase efficiency, and add cool features.</p>
     </div>
     <div class="section" id="languages">
         <h1>LANGUAGES</h1>
         <div class="left label label-default">HTML</div>
         <div class="right label label-primary">CSS</div>
         <div class="left label label-success">Javascript</div>
-        <div class="right label label-info">Ruby</div>
-        <div class="left label label-warning">Rails</div>
-        <div class="right label label-danger">Node.js</div>
-        <div class="left label label-default">Postgres</div>
-        <div class="right label label-primary">Express</div>
-        <div class="left label label-success">React</div>
         <div class="right label label-info">Ruby on Rails</div>
-        <div class="left label label-warning">jQuery</div>
+        <div class="left label label-warning">React</div>
+        <div class="right label label-danger">Node.js</div>
+        <div class="left label label-default">jQuery</div>
+        <div class="right label label-primary">Express</div>
+        <div class="left label label-success">Mustache</div>
+        <div class="right label label-info">AWS</div>
+        <div class="left label label-warning">PostgreSQL</div>
     </div>
     <div class="section" id="projects">
         <h1 class="title">PROJECTS</h1>
         <div class="projects">
-            <div class="project" data-toggle="modal" data-target="#scrabbleModal">
-                <h3 class="center">SCRABBLE</h3>
-                <img src="./images/scrabble.png" class="img-rounded img-responsive thumbnail">
-            </div>
             <div class="project" data-toggle="modal" data-target="#pelsModal">
                 <h3 class="center">PELS PIES</h3>
                 <img src="./images/pels.png" class="img-rounded img-responsive thumbnail">
             </div>
+            <div class="project" data-toggle="modal" data-target="#scrabbleModal">
+                <h3 class="center">SCRABBLE</h3>
+                <img src="./images/scrabble.png" class="img-rounded img-responsive thumbnail">
+            </div>
         </div>
-        <div class="projects row">
+        <div class="projects">
             <div class="project" data-toggle="modal" data-target="#bandModal">
                 <h3 class="center">BAND ESSENTIALS</h3>
                 <img src="./images/band.png" class="img-rounded img-responsive thumbnail">
             </div>
             <div class="project">
-                <h3 class="center">OTHER PROJECT</h3>
-                <img src="./images/band.png" class="img-rounded img-responsive thumbnail">
+                <h3 class="center">COMING SOON</h3>
+                <img src="./images/coming_soon.png" class="img-rounded img-responsive thumbnail">
             </div>
         </div>
     </div>
     <div class="section" id="contact">
         <h1>CONTACT ME</h1>
-        <h3>Email: agottlie@gmail.com</h3>
-        <h3>Phone: 845-641-1004</h3>
-        <h3><a href="https://github.com/agottlie">Github</a></h3>
-        <h3><a href="https://www.linkedin.com/in/andrew-gottlieb/">Linkedin</a></h3>
+        <p class="smallText">Email: agottlie@gmail.com</p>
+        <p class="smallText">Phone: 845-641-1004</p>
+        <div class="social">
+            <div class="github">
+                <a href="https://github.com/agottlie"><img src="./images/Github-Mark-64px.png"></a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/andrew-gottlieb/"><img src="./images/linkedin.png"></a>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com/agottlie"><img src="./images/twitter.png"></a>
+            </div>
+        </div>
+        <p class="resume"><a href="./images/Andrew_Gottlieb_Resume.pdf">Resume</a></p>
     </div>
     <!--     MODALS -->
     <div class="modal fade" id="scrabbleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -108,7 +115,7 @@
                     <img src="./images/Instructions.png">
                     <img src="./images/inplay.png">
                     <img src="./images/Letters.png">
-                    <a href="https://github.com/agottlie/scrabble"><img src="./images/Github-Mark-64px.png"></a>
+                    <a href="https://github.com/agottlie/scrabble"><img src="./images/Github.png"></a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -128,7 +135,7 @@
                     <img src="./images/map.png">
                     <img src="./images/events.png">
                     <img src="./images/order.png">
-                    <a href="https://github.com/agottlie/pelspieco"><img src="./images/Github-Mark-64px.png"></a>
+                    <a href="https://github.com/agottlie/pelspieco"><img src="./images/Github.png"></a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -148,7 +155,7 @@
                     <img src="./images/mainpage.png">
                     <img src="./images/profile.png">
                     <img src="./images/explore.png">
-                    <a href="https://github.com/agottlie/bandessentials"><img src="./images/Github-Mark-64px.png"></a>
+                    <a href="https://github.com/agottlie/bandessentials"><img src="./images/Github.png"></a>
                     <a href="https://bandessentials.herokuapp.com/">Deployed Version</a>
                 </div>
                 <div class="modal-footer">
