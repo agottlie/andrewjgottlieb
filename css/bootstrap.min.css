@@ -1375,18 +1375,6 @@ th {
     content: "\e260"
 }
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-:after,
-:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
 
 html {
     font-size: 10px;
@@ -5090,14 +5078,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-.container-fluid>.navbar-collapse,
-.container-fluid>.navbar-header,
-.container>.navbar-collapse,
-.container>.navbar-header {
-    margin-right: -15px;
-    margin-left: -15px
-}
-
 @media (min-width:768px) {
     .container-fluid>.navbar-collapse,
     .container-fluid>.navbar-header,
@@ -8047,12 +8027,11 @@ button.close {
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 .section {
-    width: 90%;
+    width: 80vw;
     max-width: none;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 90%;
     margin: 50px auto;
     padding: 30px;
 }
@@ -8065,6 +8044,7 @@ button.close {
     background-image: url("../images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 50px;
 }
 
 #intro {
@@ -8073,7 +8053,7 @@ button.close {
 }
 
 .smallText {
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: justify;
 }
 
@@ -8091,50 +8071,10 @@ button.close {
 
 body {
     font-family: 'Pridi', serif;
-    background: linear-gradient(0deg, #1a936f, #88d498, #c6dabf);
-    background-size: 600% 600%;
-    -webkit-animation: AnimationName 14s ease infinite;
-    -moz-animation: AnimationName 14s ease infinite;
-    animation: AnimationName 14s ease infinite;
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-@-webkit-keyframes AnimationName {
-    0% {
-        background-position: 51% 0%
-    }
-    50% {
-        background-position: 50% 100%
-    }
-    100% {
-        background-position: 51% 0%
-    }
-}
-
-@-moz-keyframes AnimationName {
-    0% {
-        background-position: 51% 0%
-    }
-    50% {
-        background-position: 50% 100%
-    }
-    100% {
-        background-position: 51% 0%
-    }
-}
-
-@keyframes AnimationName {
-    0% {
-        background-position: 51% 0%
-    }
-    50% {
-        background-position: 50% 100%
-    }
-    100% {
-        background-position: 51% 0%
-    }
 }
 
 .center {
@@ -8215,6 +8155,11 @@ body {
     margin-bottom: 10px;
 }
 
+.projectsSubHeading {
+    margin-top: -10px;
+    font-size: 1.7vw;
+}
+
 
 
 /*NAV BAR*/
@@ -8248,4 +8193,29 @@ body {
 
 .navbar>.container {
     width: 100vw;
+}
+
+.collapse.navbar-collapse {
+    float: right;
+}
+
+@media (max-width: 700px) {
+    .section {
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .label {
+        width: 200px;
+        height: 15px;
+        font-size: 12px;
+        padding-top: 3px;
+        margin-bottom: 5px;
+    }
+
+    .projects {
+        width: 90vw;
+    }
 }
