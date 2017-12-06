@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-size: 20px
+}
+
+
+/*--------NAV----------*/
+
+.navbar {
+    height: 12vh;
+    border: 1px solid lightgray;
+    margin: 0;
+    box-shadow: 5px 10px 18px lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.nav-list>li {
+    display: inline;
+}
+
+.left-nav,
+.right-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 25px;
+}
+
+.nav-image>img {
+    height: 9vh;
+}
+
+.name {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+li>a {
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+}
+
+li {
+    margin: 0 10px;
+}
+
+
+/*-------END NAV----------*/
+
+
+.section {
+	margin: 50px 70px;
+}
+
+
+/*---------ABOUT-------*/
+
+
+.face-pic {
+    border: 1px solid lightgray;
+    box-shadow: 5px 10px 18px gray;
+    display: inline-block;
+    width: 33%;
+}
+
+.face-pic>img {
+	width: 100%;
+}
+
+.about-title {
+	margin: 5px 0;
+	font-size: 2.25vw;
+}
+
+.smallText {
+	margin-top: 5px;
+	font-size: 1.75vw;
+	text-align: justify;
+}
+
+.about-text {
+	margin-left: 20px;
+	display: inline-block;
+	width: 60%;
+}
+
+
+/*---------END ABOUT-------*/
+
+
+/*----------LANGUAGES----------*/
+
+
+.language-title {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.languages {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.language {
+	width: 12.5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.language>img {
+	width: 100%;
+}
+
+.language>h3 {
+	text-align: center;
+}
+
+
+/*-------END LANGUAGES----------*/
+
+
+
+/*----------PROJECTS------------*/
+
+
+.projects-title {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.projectsSubHeading {
+	text-align: center;
+	font-size: 15px;
+	margin: 5px 0 30px 0;
+}
+
+.project {
+	width: 45%;
+}
+
+.imagebox>img {
+	width: 100%;
+	border: 1px solid gray;
+	box-shadow: 5px 10px 18px gray;
+}
+
+.project>h3 {
+	text-align: center;
+	margin: 7px 0;
+}
+
+.project-links {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-links>a {
+	margin: 0 2.5px;
+}
+
+.project-links>a>img {
+	width: 30px;
+	margin-bottom: 50px;
+}
+
+.project>a {
+	text-align: center;
+}
+
