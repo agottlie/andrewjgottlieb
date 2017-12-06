@@ -1,7 +1,22 @@
 body {
     margin: 0;
-    font-size: 20px
+    font-size: 1.75vw;
 }
+
+.section {
+    margin: 50px 70px;
+}
+
+.title {
+    font-size: 3vw;
+}
+
+.filler {
+    color: white;
+}
+
+
+
 
 
 /*--------NAV----------*/
@@ -57,16 +72,13 @@ li {
 }
 
 
+
+
+
 /*-------END NAV----------*/
 
 
-.section {
-	margin: 50px 70px;
-}
-
-
 /*---------ABOUT-------*/
-
 
 .face-pic {
     border: 1px solid lightgray;
@@ -76,25 +88,28 @@ li {
 }
 
 .face-pic>img {
-	width: 100%;
+    width: 100%;
 }
 
 .about-title {
-	margin: 5px 0;
-	font-size: 2.25vw;
+    margin: 5px 0;
+    font-size: 2.25vw;
 }
 
 .smallText {
-	margin-top: 5px;
-	font-size: 1.75vw;
-	text-align: justify;
+    margin-top: 5px;
+    font-size: 1.75vw;
+    text-align: justify;
 }
 
 .about-text {
-	margin-left: 20px;
-	display: inline-block;
-	width: 60%;
+    margin-left: 20px;
+    display: inline-block;
+    width: 60%;
 }
+
+
+
 
 
 /*---------END ABOUT-------*/
@@ -102,91 +117,94 @@ li {
 
 /*----------LANGUAGES----------*/
 
-
 .language-title {
-	text-align: center;
-	margin-bottom: 25px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .languages {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .language {
-	width: 12.5%;
-	display: flex;
-	flex-direction: column;
+    width: 12.5%;
+    display: flex;
+    flex-direction: column;
 }
 
 .language>img {
-	width: 100%;
+    width: 100%;
 }
 
 .language>h3 {
-	text-align: center;
+    text-align: center;
 }
+
+
+
 
 
 /*-------END LANGUAGES----------*/
 
 
-
 /*----------PROJECTS------------*/
 
-
 .projects-title {
-	text-align: center;
-	margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .projectsSubHeading {
-	text-align: center;
-	font-size: 15px;
-	margin: 5px 0 30px 0;
+    text-align: center;
+    font-size: 15px;
+    margin: 5px 0 30px 0;
 }
 
 .project {
-	width: 45%;
+    width: 45%;
 }
 
 .imagebox>img {
-	width: 100%;
-	border: 1px solid gray;
-	box-shadow: 5px 10px 18px gray;
+    width: 100%;
+    border: 1px solid gray;
+    box-shadow: 5px 10px 18px gray;
 }
 
 .project>h3 {
-	text-align: center;
-	margin: 7px 0;
+    text-align: center;
+    margin: 7px 0;
 }
 
 .project-links {
-	text-align: center;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-links>a {
-	margin: 0 2.5px;
+    margin: 0 2.5px;
 }
 
 .project-links>a>img {
-	width: 40px;
-	margin-bottom: 50px;
+    width: 40px;
+    margin-bottom: 50px;
 }
 
 .project>a {
-	text-align: center;
+    text-align: center;
 }
+
+
+
 
 
 /*------END PROJECTS-----------*/
@@ -195,21 +213,108 @@ li {
 /*------------CONTACT-------------*/
 
 .contact-title {
-	text-align: center;
+    text-align: center;
 }
 
 #contact>p {
-	text-align: center;
+    text-align: center;
 }
 
 .social {
-	text-align: center;
+    text-align: center;
 }
 
 .social>div {
-	display: inline-block;
+    display: inline-block;
 }
 
 .social>div>a>img {
-	width: 40px;
+    width: 40px;
+}
+
+
+
+
+/*-----------END CONTACTS------------*/
+
+
+/*----------MEDIA---------------*/
+
+@media (max-width: 645px) {
+    .section {
+        margin: 50px 30px;
+    }
+
+    .title,
+    .about-title {
+        font-size: 5vw;
+    }
+
+    .navbar {
+        height: 9vh;
+    }
+
+    .nav-image>img {
+        height: 6vh;
+    }
+
+    .right-nav,
+    .left-nav {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .name {
+        margin: 0;
+        font-size: 2.3vw;
+    }
+
+    .nav-list>li>a {
+        font-size: 3.5vw;
+    }
+
+    .filler {
+        height: 50px;
+    }
+
+    .face-pic,
+    .about-text {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .face-pic {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .smallText {
+        font-size: 3vw;
+    }
+
+    .language>h3 {
+        font-size: 2.3vw;
+    }
+
+    .resume>a {
+        font-size: 3vw;
+    }
+
+    .project-links>a>img {
+    	width: 30px;
+    	margin: 0 5px 50px 5px;
+   	}
+
+   	.project>h3 {
+		font-size: 3vw;
+   	}
 }
