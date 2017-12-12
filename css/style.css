@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-size: 1.75vw;
+    font-family: 'Barlow', sans-serif;
 }
 
 .section {
@@ -14,6 +15,9 @@ body {
 .filler {
     color: white;
 }
+
+
+
 
 
 
@@ -75,16 +79,25 @@ li {
 
 
 
+
+
+
 /*-------END NAV----------*/
 
 
 /*---------ABOUT-------*/
 
+.about_main {
+    display: flex;
+    flex-direction: row;
+}
+
 .face-pic {
-    border: 1px solid lightgray;
+    border: 3px solid black;
     box-shadow: 5px 10px 18px gray;
     display: inline-block;
-    width: 33%;
+    width: 40%;
+    height: 100%;
 }
 
 .face-pic>img {
@@ -92,21 +105,33 @@ li {
 }
 
 .about-title {
-    margin: 5px 0;
+    margin: 5px 0 0 25px;
     font-size: 2.25vw;
+    left: 40%;
+    position: relative;
+    padding-bottom: 14px;
+    z-index: -1;
+}
+
+.media-title {
+    display: none;
+    margin-top: 0;
 }
 
 .smallText {
-    margin-top: 5px;
+    margin-top: 0;
     font-size: 1.75vw;
     text-align: justify;
 }
 
 .about-text {
-    margin-left: 20px;
+    margin: -6px 0 0 20px;
     display: inline-block;
-    width: 60%;
+    width: 50%;
 }
+
+
+
 
 
 
@@ -148,9 +173,12 @@ li {
 }
 
 #ruby {
-	width: 150%;
-	margin-left: -20%;
+    width: 150%;
+    margin-left: -20%;
 }
+
+
+
 
 
 
@@ -176,35 +204,24 @@ li {
 
 .imagebox>img {
     width: 100%;
-    border: 1px solid gray;
+    border: 3px solid black;
     box-shadow: 5px 10px 18px gray;
+}
+
+.imagebox>img:hover {
+    cursor: pointer;
 }
 
 .project>h3 {
     text-align: center;
-    margin: 7px 0;
-}
-
-.project-links {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-links>a {
-    margin: 0 2.5px;
-}
-
-.project-links>a>img {
-    width: 40px;
     margin-bottom: 50px;
+    margin-top: 10px;
 }
 
 .project>a {
     text-align: center;
 }
+
 
 
 
@@ -238,7 +255,79 @@ li {
 
 
 
+
 /*-----------END CONTACTS------------*/
+
+
+/*------------MODALS---------------*/
+
+
+/*Sourced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal*/
+
+.pels_modal,
+.scrabble_modal,
+.mediaddict_modal,
+.bandessentials_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border: 5px solid black;
+    text-align: justify;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 3vw;
+    font-weight: bold;
+    position: absolute;
+    right: 19%;
+    top: 100px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.project-links {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-links>a {
+    margin: 0 2.5px;
+}
+
+.project-links>a>img {
+    width: 40px;
+}
+
+
+
+
+
+/*-----------END MODALS-------------*/
 
 
 /*----------MEDIA---------------*/
@@ -248,8 +337,20 @@ li {
         margin: 50px 30px;
     }
 
-    .title,
     .about-title {
+        display: none;
+    }
+
+    .media-title {
+        display: block;
+    }
+
+    .about_main {
+        flex-direction: column;
+    }
+
+    .title,
+    .media-title {
         font-size: 5vw;
     }
 
@@ -300,7 +401,8 @@ li {
         margin-bottom: 20px;
     }
 
-    .smallText {
+    .smallText,
+    .modal-content {
         font-size: 3vw;
     }
 
@@ -313,17 +415,25 @@ li {
     }
 
     .project-links>a>img {
-    	width: 30px;
-    	margin: 0 5px 50px 5px;
-   	}
+        width: 30px;
+        margin: 0 5px;
+    }
 
-   	.project>h3 {
-		font-size: 3vw;
-   	}
+    .project>h3 {
+        font-size: 3vw;
+    }
+
+    .close {
+        font-size: 8vw;
+        font-weight: bold;
+        position: absolute;
+        right: 16%;
+        top: 95px;
+    }
 }
 
 @media (max-width: 375px) {
-	.nav-list>li>a {
+    .nav-list>li>a {
         font-size: 2.9vw;
     }
 }

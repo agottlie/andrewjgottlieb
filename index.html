@@ -8,7 +8,7 @@
     <title>Andrew Gottlieb</title>
     <link rel="shortcut icon" href="./images/Andrew-Logo-01.png" />
     <link href="./css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,600" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -39,12 +39,15 @@
         <div class="filler">
             .
         </div>
-        <img class="face-pic" src="./images/face.jpg">
-        <div class="about-text">
-            <h2 class="bold about-title">Hello, I'm Andrew</h2>
-            <p class="smallText">I’m a passionate web developer looking to combine my creativity and operations background in a collaborative environment. My experience in everything from the advertising world to playing in a band gives me the adaptability needed to work in a fast-paced workplace. I’m eager to learn, to lead, and to inspire.</p>
-            <p class="smallText">I graduated from the University of Pennsylvania with a Bachelor's degree in Sociology and a minor in Economics. Shortly after I moved to New York City, and have spent time in the startup world as well as the corporate world, working with everything from finance to augmented reality. When not in front of a computer, you'll probably find me behind my drum kit or biking around Brooklyn.</p>
-            <p class="smallText">Above all else, I'm a problem solver. I love tinkering around with code to improve functionality, increase efficiency, and add cool features.</p>
+        <h2 class="bold about-title">Hello, I'm Andrew</h2>
+        <div class="about_main">
+            <img class="face-pic" src="./images/face.jpg">
+            <div class="about-text">
+                <h2 class="bold media-title">Hello, I'm Andrew</h2>
+                <p class="smallText">I’m a passionate web developer looking to combine my creativity and operations background in a collaborative environment. My experience in everything from the advertising world to playing in a band gives me the adaptability needed to work in a fast-paced workplace. I’m eager to learn, to lead, and to inspire.</p>
+                <p class="smallText">I graduated from the University of Pennsylvania with a Bachelor's degree in Sociology and a minor in Economics. Shortly after I moved to New York City, and have spent time in the startup world as well as the corporate world, working with everything from finance to augmented reality. When not in front of a computer, you'll probably find me behind my drum kit or biking around Brooklyn.</p>
+                <p class="smallText">Above all else, I'm a problem solver. I love tinkering around with code to improve functionality, increase efficiency, and add cool features.</p>
+            </div>
         </div>
     </div>
     <div class="section" id="languages">
@@ -118,45 +121,29 @@
         <div class="row">
             <div class="project">
                 <div class="imagebox">
-                    <img src="./images/mediaddict.png" id="mediaddict">
+                    <img src="./images/mediaddict.png" class="modal-click" id="mediaddict">
                 </div>
                 <h3>MEDIADDICT</h3>
-                <div class="project-links">
-                    <a href="https://github.com/agottlie/mediAddict"><img src="./images/Github.png"></a>
-                    <a href="http://mediaddict.surge.sh"><img src="./images/link.png"></a>
-                </div>
             </div>
             <div class="project">
                 <div class="imagebox">
-                    <img src="./images/pels.png" id="pels">
+                    <img src="./images/pels.png" class="modal-click" id="pels">
                 </div>
                 <h3>PELS PIES</h3>
-                <div class="project-links">
-                    <a href="https://github.com/agottlie/pelspieco"><img src="./images/Github.png"></a>
-                    <a href="http://pelspieco.com/"><img src="./images/link.png"></a>
-                </div>
             </div>
         </div>
         <div class="row">
             <div class="project">
                 <div class="imagebox">
-                    <img src="./images/band.png" id="bandessentials">
+                    <img src="./images/band.png" class="modal-click" id="bandessentials">
                 </div>
                 <h3>BAND ESSENTIALS</h3>
-                <div class="project-links">
-                    <a href="https://github.com/agottlie/bandessentials"><img src="./images/Github.png"></a>
-                    <a href="https://bandessentials.herokuapp.com/"><img src="./images/link.png"></a>
-                </div>
             </div>
             <div class="project">
                 <div class="imagebox">
-                    <img src="./images/scrabble.png" id="scrabble">
+                    <img src="./images/scrabble.png" class="modal-click" id="scrabble">
                 </div>
                 <h3>SCRABBLE</h3>
-                <div class="project-links">
-                    <a href="https://github.com/agottlie/scrabble"><img src="./images/Github.png"></a>
-                    <a href="https://agottlie.github.io/scrabble/"><img src="./images/link.png"></a>
-                </div>
             </div>
         </div>
     </div>
@@ -187,82 +174,67 @@
         <p class="resume"><a href="./images/Andrew_Gottlieb_Resume.pdf">Resume</a></p>
     </div>
     <!--     MODALS -->
-    <!-- <div class="modal fade" id="scrabbleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">SCRABBLE GAME</h4>
-                </div>
-                <div class="modal-body">
-                    <h4>This is the board game Scrabble, created with HTML, CSS, Javascript and jQuery. This version closely mimics the real life game, although it does not check if words are real or not, nor does it contain letter/word multipliers. It does contain logic for correctly adding score and having the appropriate turn based mechanisms.</h4>
-                    <img src="./images/Instructions.png">
-                    <img src="./images/inplay.png">
-                    <img src="./images/Letters.png">
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+    <div class="scrabble_modal modal">
+        <div class="modal-content">
+            <div class="close">&times;</div>
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">SCRABBLE GAME</h4>
+            </div>
+            <div class="modal-body">
+                <h4>This is the board game Scrabble, created with HTML, CSS, Javascript and jQuery. This version closely mimics the real life game, although it does not check if words are real or not, nor does it contain letter/word multipliers. It does contain logic for correctly adding score and having the appropriate turn based mechanisms.</h4>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/agottlie/scrabble"><img src="./images/Github.png"></a>
+                <a href="https://agottlie.github.io/scrabble/"><img src="./images/link.png"></a>
             </div>
         </div>
-        <div class="modal fade" id="pelsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">PEL'S PIE CO SITE</h4>
-                    </div>
-                    <div class="modal-body">
-                        <h4>I created this website for my girlfriend's pie shop as an exercise in full MVC deployment on a live site.  I recreated the design from a previous site made in Muse, and helped streamline some of the UI.  From there, I built out an event inquiry page, and fully integrated e-commerce page utilizing Square's API.  There's also a admin page where the owner can view all event inquiries and manage current availability of all sale items.</h4>
-                        <img src="./images/map.png">
-                        <img src="./images/events.png">
-                        <img src="./images/order.png">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+    </div>
+    <div class="pels_modal modal">
+        <div class="modal-content">
+            <div class="close">&times;</div>
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">PEL'S PIE CO SITE</h4>
+            </div>
+            <div class="modal-body">
+                <h4>I created this website for my girlfriend's pie shop as an exercise in full MVC deployment on a live site.  I recreated the design from a previous site made in Muse, and helped streamline some of the UI.  From there, I built out an event inquiry page, and fully integrated e-commerce page utilizing Square's API.  There's also a admin page where the owner can view all event inquiries and manage current availability of all sale items.</h4>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/agottlie/pelspieco"><img src="./images/Github.png"></a>
+                <a href="http://pelspieco.com/"><img src="./images/link.png"></a>
             </div>
         </div>
-        <div class="modal fade" id="bandModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">BAND ESSENTIALS APP</h4>
-                    </div>
-                    <div class="modal-body">
-                        <h4>This is a full stack app for bands on the run! It provides a way for bands to keep track of their tour dates and have useful food information for each stop of the tour. The app makes use of MVC modeling, using a local database to store info on bands, venues, and tour dates, and accesses Google Places' external API. Bands can create accounts using an encrypted password; add, edit, and delete tour dates; and find breakfast, dinner, lunch, and snack options nearby each venue.</h4>
-                        <img src="./images/mainpage.png">
-                        <img src="./images/profile.png">
-                        <img src="./images/explore.png">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+    </div>
+    <div class="bandessentials_modal modal">
+        <div class="modal-content">
+            <div class="close">&times;</div>
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">BAND ESSENTIALS APP</h4>
+            </div>
+            <div class="modal-body">
+                <h4>This is a full stack app for bands on the run! It provides a way for bands to keep track of their tour dates and have useful food information for each stop of the tour. The app makes use of MVC modeling, using a local database to store info on bands, venues, and tour dates, and accesses Google Places' external API. Bands can create accounts using an encrypted password; add, edit, and delete tour dates; and find breakfast, dinner, lunch, and snack options nearby each venue.</h4>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/agottlie/bandessentials"><img src="./images/Github.png"></a>
+                <a href="https://bandessentials.herokuapp.com/"><img src="./images/link.png"></a>
             </div>
         </div>
-        <div class="modal fade" id="mediaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">MEDIADDICT APP</h4>
-                    </div>
-                    <div class="modal-body">
-                        <h4>This is a full stack app for all the media addicts out there. There are so many shows to follow and new movies coming out every week, and sometimes it becomes a bit overwhelming to keep track of it all. mediAddict allows you to track your favorite pieces of media, know when they will be airing, and be able to read reviews/recaps about them after you've watched. The app makes use of MVC modeling, using a local database to store info on shows, movies, users, comments, and more, and accesses external APIs from TV Maze, TMDB, and NY Times Movie reviews. Show recaps are also scraped from the AVClub. Users can create accounts using an encrypted password; add and delete shows, movies and episodes; and track their viewing progress on a global leaderboard.</h4>
-                        <img src="./images/twinpeaks.png">
-                        <img src="./images/addshow.png">
-                        <img src="./images/leaderboard.png">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+    </div>
+    <div class="mediaddict_modal modal">
+        <div class="modal-content">
+            <div class="close">&times;</div>
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">MEDIADDICT APP</h4>
             </div>
-        </div> -->
-        <!--     end MODALS -->
+            <div class="modal-body">
+                <h4>This is a full stack app for all the media addicts out there. There are so many shows to follow and new movies coming out every week, and sometimes it becomes a bit overwhelming to keep track of it all. mediAddict allows you to track your favorite pieces of media, know when they will be airing, and be able to read reviews/recaps about them after you've watched. The app makes use of MVC modeling, using a local database to store info on shows, movies, users, comments, and more, and accesses external APIs from TV Maze, TMDB, and NY Times Movie reviews. Show recaps are also scraped from the AVClub. Users can create accounts using an encrypted password; add and delete shows, movies and episodes; and track their viewing progress on a global leaderboard.</h4>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/agottlie/mediAddict"><img src="./images/Github.png"></a>
+                <a href="http://mediaddict.surge.sh"><img src="./images/link.png"></a>
+            </div>
+        </div>
+    </div>
+    <!--     end MODALS -->
 </body>
 
 </html>
