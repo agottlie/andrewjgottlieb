@@ -12,16 +12,16 @@ $(() => {
         if (count === 4) {
             count = 0;
         }
-        $("#pels").attr("src", pelspics[count]);
-        $("#mediaddict").attr("src", mediapics[count]);
-        $("#bandessentials").attr("src", bandpics[count]);
-        $("#scrabble").attr("src", scrabblepics[count]);
+        $("#pels").css("background-image", `url("` + pelspics[count] + `")`);
+        $("#mediaddict").css("background-image", `url("` + mediapics[count] + `")`);
+        $("#bandessentials").css("background-image", `url("` + bandpics[count] + `")`);
+        $("#scrabble").css("background-image", `url("` + scrabblepics[count] + `")`);
 
     }, 1000);
 
     let selected = false,
         modal;
-    $(document.body).on('click', '.modal-click', (e) => {
+    $(document.body).on('click', '.project', (e) => {
         if (!selected) {
             modal = "." + $(e.target).attr('id') + "_modal";
             console.log(modal);
@@ -34,5 +34,30 @@ $(() => {
         $(modal).hide();
         selected = false;
     })
+
+    $('.project').css({
+        "width": $(window).width() / 3,
+        "height": ($(window).width() / 3) / 1.49495
+    });
+
+    $(window).resize(function() {
+        $('.project').css({
+            "width": $(window).width() / 3,
+            "height": ($(window).width() / 3) / 1.49495
+        });
+    });
+
+    //--------scrollmagic--------------
+
+
+    var controller = new ScrollMagic.Controller();
+
+    var scene1 = new ScrollMagic.Scene({
+            triggerElement: ".pin1",
+            triggerHook: 0,
+            reverse: true
+        })
+        .setPin(".pin1")
+        .addTo(controller);
 
 })

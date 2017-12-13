@@ -23,18 +23,19 @@ body {
 
 
 
+
+
 /*--------NAV----------*/
 
 .navbar {
     height: 12vh;
     border: 1px solid lightgray;
     margin: 0;
-    box-shadow: 5px 10px 18px lightgray;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 10px;
-    position: fixed;
     top: 0;
     background-color: white;
     width: 100%;
@@ -71,6 +72,10 @@ li>a {
     font-size: 2vw;
 }
 
+li>a:hover {
+    font-weight: 900;
+}
+
 li {
     margin: 0 10px;
 }
@@ -85,49 +90,82 @@ li {
 /*-------END NAV----------*/
 
 
-/*---------ABOUT-------*/
+/*---------INTRO------------*/
 
-.about_main {
+.intro {
+    height: 85vh;
+    margin: 0 70px;
+}
+
+.intro-image {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    flex-direction: column;
 }
 
-.face-pic {
-    border: 3px solid black;
-    box-shadow: 5px 10px 18px gray;
-    display: inline-block;
-    width: 40%;
-    height: 100%;
+.intro-image>img {
+    height: 55vh;
+    display: block;
+    animation: zoomIn 4s
 }
 
-.face-pic>img {
-    width: 100%;
+.intro-name {
+    margin-left: -15%;
+    font-size: 3vw;
+    margin-bottom: 1%;
 }
 
-.about-title {
-    margin: 5px 0 0 25px;
-    font-size: 2.25vw;
-    left: 40%;
-    position: relative;
-    padding-bottom: 14px;
-    z-index: -1;
+.intro-sub1 {
+    margin-left: -10%;
+    font-size: 2vw;
+    margin-bottom: 1%;
 }
 
-.media-title {
-    display: none;
-    margin-top: 0;
+.intro-sub2 {
+    font-size: 1.25vw;
 }
 
-.smallText {
-    margin-top: 0;
-    font-size: 1.75vw;
-    text-align: justify;
+.intro-name,
+.intro-sub1,
+.intro-sub2 {
+    animation: showText 4s;
 }
 
-.about-text {
-    margin: -6px 0 0 20px;
-    display: inline-block;
-    width: 50%;
+.scroll {
+    height: 5vh;
+    text-align: center;
+    font-size: 1.25vw;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -135,9 +173,9 @@ li {
 
 
 
+/*--------END INTRO---------*/
 
 
-/*---------END ABOUT-------*/
 
 
 /*----------LANGUAGES----------*/
@@ -182,6 +220,12 @@ li {
 
 
 
+
+
+
+
+
+
 /*-------END LANGUAGES----------*/
 
 
@@ -198,18 +242,39 @@ li {
     margin: 5px 0 30px 0;
 }
 
+.row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .project {
-    width: 45%;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .3);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    opacity: 1;
 }
 
-.imagebox>img {
-    width: 100%;
-    border: 3px solid black;
-    box-shadow: 5px 10px 18px gray;
+#mediaddict {
+    background-image: url("../images/mediaddict.png");
 }
 
-.imagebox>img:hover {
+#bandessentisls {
+    background-image: url("../images/band.png");
+}
+
+#pels {
+    background-image: url("../images/pels.png");
+}
+
+#scrabble {
+    background-image: url("../images/scrabble.png");
+}
+
+.project:hover {
     cursor: pointer;
+    opacity: 0.25;
 }
 
 .project>h3 {
@@ -221,6 +286,10 @@ li {
 .project>a {
     text-align: center;
 }
+
+
+
+
 
 
 
@@ -242,6 +311,7 @@ li {
 
 .social {
     text-align: center;
+
 }
 
 .social>div {
@@ -251,6 +321,45 @@ li {
 .social>div>a>img {
     width: 40px;
 }
+
+.about_main {
+    display: flex;
+    flex-direction: row;
+}
+
+.face-pic {
+    display: inline-block;
+    width: 65%;
+}
+
+.about-title {
+    margin: 5px 0 0 25px;
+    font-size: 2.25vw;
+    position: relative;
+    padding-bottom: 14px;
+    z-index: -1;
+}
+
+.smallText {
+    margin-top: 0;
+    font-size: 1.75vw;
+    text-align: justify;
+}
+
+.about-text, .leftabout {
+    margin: -6px 0 0 20px;
+    display: inline-block;
+    width: 50%;
+}
+
+.contactText {
+    text-align: center;
+}
+
+
+
+
+
 
 
 
