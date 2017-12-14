@@ -12,16 +12,16 @@ $(() => {
         if (count === 4) {
             count = 0;
         }
-        $("#pels").css("background-image", `url("` + pelspics[count] + `")`);
-        $("#mediaddict").css("background-image", `url("` + mediapics[count] + `")`);
-        $("#bandessentials").css("background-image", `url("` + bandpics[count] + `")`);
-        $("#scrabble").css("background-image", `url("` + scrabblepics[count] + `")`);
+        $("#pels_image").attr("src", pelspics[count]);
+        $("#media_image").attr("src", mediapics[count]);
+        $("#band_image").attr("src", bandpics[count]);
+        $("#scrabble_image").attr("src", scrabblepics[count]);
 
     }, 1000);
 
     let selected = false,
         modal;
-    $(document.body).on('click', '.project', (e) => {
+    $(document.body).on('click', 'span', (e) => {
         if (!selected) {
             modal = "." + $(e.target).attr('id') + "_modal";
             console.log(modal);
@@ -35,29 +35,28 @@ $(() => {
         selected = false;
     })
 
-    $('.project').css({
+    $('.project>img').css({
         "width": $(window).width() / 3,
         "height": ($(window).width() / 3) / 1.49495
     });
 
     $(window).resize(function() {
-        $('.project').css({
+        $('.project>img').css({
             "width": $(window).width() / 3,
             "height": ($(window).width() / 3) / 1.49495
         });
     });
 
-    //--------scrollmagic--------------
-
-
-    var controller = new ScrollMagic.Controller();
-
-    var scene1 = new ScrollMagic.Scene({
-            triggerElement: ".pin1",
-            triggerHook: 0,
-            reverse: true
-        })
-        .setPin(".pin1")
-        .addTo(controller);
+    $(window).on('scroll', (e) => {
+        if (window.scrollY > $(window).height()) {
+            $('.navbar').css({
+                "position": "fixed",
+                "top": 0,
+                "z-index": 10
+            });
+        } else {
+            $('.navbar').css("position", "static");
+        }
+    })
 
 })
