@@ -21,6 +21,7 @@ body {
 
 
 
+
 /*--------NAV----------*/
 
 .navbar {
@@ -238,6 +239,9 @@ li {
 }
 
 
+
+
+
 /*Masking code sourced from https://stackoverflow.com/questions/30007605/hover-over-image-making-it-transparent-and-showing-text*/
 
 .project {
@@ -340,7 +344,6 @@ li {
 
 
 
-
 /*-----------END CONTACTS------------*/
 
 
@@ -413,8 +416,6 @@ li {
 
 
 
-
-
 /*-----------END MODALS-------------*/
 
 
@@ -423,18 +424,6 @@ li {
 @media (max-width: 645px) {
     .section {
         margin: 50px 30px;
-    }
-
-    .about-title {
-        display: none;
-    }
-
-    .media-title {
-        display: block;
-    }
-
-    .about_main {
-        flex-direction: column;
     }
 
     .title,
@@ -450,10 +439,15 @@ li {
         height: 6vh;
     }
 
-    .right-nav,
     .left-nav {
         padding: 0;
         display: inline-block;
+    }
+
+    .right-nav {
+        position: relative;
+        float: right;
+        height: 100%;
     }
 
     .navbar {
@@ -469,29 +463,56 @@ li {
         font-size: 3.5vw;
     }
 
+    .intro-image>img {
+        height: 30vh;
+    }
+
+
+    .intro-name {
+        font-size: 5vw;
+    }
+
+    .intro-sub1 {
+        font-size: 4vw;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+
+    .intro-sub2 {
+        font-size: 3vw;
+        margin-left: 25%;
+        margin-top: 1%;
+    }
+
+    .scroll {
+        font-size: 3vw;
+    }
+
     .filler {
         height: 50px;
     }
 
-    .face-pic,
-    .about-text {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
+    .leftabout {
+        width: 40%;
     }
 
     .about-text {
-        width: 100%;
+        width: 60%;
     }
 
-    .face-pic {
-        width: 50%;
-        margin-bottom: 20px;
+    .social>div>a>img {
+        width: 25px;
+        margin: 0 5px;
     }
 
     .smallText,
-    .modal-content {
+    .modal-content,
+    .contactText {
         font-size: 3vw;
+    }
+
+    .face-pic {
+        width: 80%;
     }
 
     .language>h3 {
@@ -509,6 +530,10 @@ li {
 
     .project>h3 {
         font-size: 3vw;
+    }
+
+    .projectsSubHeading {
+        font-size: 10px;
     }
 
     .close {

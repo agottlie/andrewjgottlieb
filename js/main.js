@@ -24,7 +24,6 @@ $(() => {
     $(document.body).on('click', 'span', (e) => {
         if (!selected) {
             modal = "." + $(e.target).attr('id') + "_modal";
-            console.log(modal);
             $(modal).show();
         }
         selected = true;
