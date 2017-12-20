@@ -22,6 +22,7 @@ body {
 
 
 
+
 /*--------NAV----------*/
 
 .navbar {
@@ -76,6 +77,7 @@ li>a:hover {
 li {
     margin: 0 10px;
 }
+
 
 
 
@@ -170,6 +172,7 @@ li {
 
 
 
+
 /*--------END INTRO---------*/
 
 
@@ -216,6 +219,7 @@ li {
 
 
 
+
 /*-------END LANGUAGES----------*/
 
 
@@ -237,6 +241,7 @@ li {
     display: flex;
     justify-content: space-around;
 }
+
 
 
 
@@ -283,6 +288,7 @@ li {
     vertical-align: middle;
     font-size: 3vw;
 }
+
 
 
 
@@ -338,6 +344,7 @@ li {
     text-align: center;
     margin: 15px;
 }
+
 
 
 
@@ -416,12 +423,17 @@ li {
 
 
 
+
 /*-----------END MODALS-------------*/
 
 
 /*----------MEDIA---------------*/
 
 @media (max-width: 645px) {
+    .intro {
+        height: 70vh;
+    }
+
     .section {
         margin: 50px 30px;
     }
